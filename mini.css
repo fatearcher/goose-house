@@ -1,0 +1,151 @@
+@media screen and (max-width: 640px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir LT Pro 65 Medium";
+    list-style: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .notification,
+  .onlinestore {
+    display: none;
+  }
+
+  header {
+    padding-top: 5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sns ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sublnk {
+    /* border: 1px red solid; */
+    display: flex;
+    align-items: center;
+  }
+
+  header img {
+    margin-left: 20px;
+    width: 25px;
+
+  }
+
+  aside {
+    display: none;
+  }
+
+  .slide,
+  .slide img {
+    padding: 5px;
+    width: 100%;
+  }
+
+  /* 
+
+
+  .menu1.iconfont,
+  .menu.iconfont {
+    font-size: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    padding: 5px;
+  }
+
+  header img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .shadow {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+    z-index: 8;
+  }
+
+  aside {
+    transform: translateX(-500px);
+    width: 200px;
+    height: 100vh;
+    background: #eee;
+    color: #fff;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .slide,
+  .slide img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .sns a {
+    margin: 0 5px;
+  }
+
+  .osirase,
+  .onlinestore {
+    display: none;
+  }
+
+  .nav-menu {
+    font-size: 14px;
+  }
+
+  .nav-menu li {
+    padding: 5px;
+  }
+
+  .logo {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .search-box {
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+
+  .search-box input {
+    border: none;
+    height: 30px;
+    flex: 1;
+    max-width: 120px;
+    background: transparent;
+  }
+
+  .search-box img {
+    width: 20px;
+    margin: 0 10px;
+    height: 20px;
+    cursor: pointer;
+  }
+} */
