@@ -95,9 +95,8 @@ header {
 
 .one {
   display: flex;
+
 }
-
-
 
 aside {
   width: 2.296875rem;
@@ -202,14 +201,14 @@ aside {
 /* slide */
 
 .swiper-container {
-  width: 7.703125rem;
+  width: 7.803125rem;
   /* border: 1px red solid; */
 }
 
 .slide img {
-  height: 888px;
-  width: 7.703125rem;
   display: block;
+  height: 4.625rem;
+  width: 7.803125rem;
 }
 
 .swiper-pagination-bullet {
@@ -226,3 +225,9 @@ aside {
 }
 
 /* section two */
+
+.whatnews {
+  width: 100%;
+  height: 2.604167rem;
+  background: #000;
+}
