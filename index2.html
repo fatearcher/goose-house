@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <title>Document</title>
     <link rel="stylesheet" href="./js/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="./mini.css" media="screen and (max-width: 640px)" />
@@ -51,22 +51,23 @@
 
     <main>
         <section class="one">
-            <aside class="">
+            <aside>
                 <!-- <div class="menu iconfont icon-menu3"></div> 菜单栏-->
                 <img class="logo" src="./img/logo.png" alt="" />
-                <div class="nav">
-                    <ul class="nav-menu">
-                        <li><a class="btn btn1" href="#">NEWS</a></li>
-                        <li><a class="btn btn1" href="#">STREAMING LIVE</a></li>
-                        <li><a class="btn btn1" href="#">LIVE SCHEDULE</a></li>
-                        <li><a class="btn btn1" href="#">MEMBERS INFO</a></li>
-                        <li><a class="btn btn1" href="#">DISCOGRAPHY</a></li>
-                        <li><a class="btn btn1" href="#">WHAT'S GOOSE HOUSE</a></li>
-                    </ul>
-                    <div class="search-box flex j-s a-c">
-                        <input class="search-txt" type="text" placeholder="" />
-                        <img src="./img/loupe.png" />
-                    </div>
+                <div class="nav"></div>
+                <ul class="nav-menu">
+                    <li><a class="a-color a-color1" href="#">NEWS</a></li>
+                    <li><a class="a-color a-color1" href="#">STREAMING LIVE</a></li>
+                    <li><a class="a-color a-color1" href="#">LIVE SCHEDULE</a></li>
+                    <li><a class="a-color a-color1" href="#">MEMBERS INFO</a></li>
+                    <li><a class="a-color a-color1" href="#">DISCOGRAPHY</a></li>
+                    <li>
+                        <a class="a-color a-color1" href="#">WHAT'S GOOSE HOUSE</a>
+                    </li>
+                </ul>
+                <div class="search-box flex j-s a-c">
+                    <input class="search-txt" type="text" placeholder="" />
+                    <img src="./img/loupe.png" />
                 </div>
             </aside>
 
@@ -76,20 +77,20 @@
                         <img src="./img/1.jpg" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/1.jpg" alt="" />
+                        <img src="./img/2.jpg" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/1.jpg" alt="" />
+                        <img src="./img/3.jpg" alt="" />
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="two"></section>
+        <section class="two">
+        </section>
         <section class="three"></section>
     </main>
-
 
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/swiper/js/swiper.min.js"></script>
@@ -97,7 +98,7 @@
         var mySwiper = new Swiper(".swiper-container", {
             loop: true, // 循环模式选项
             autoplay: {
-                duration: 2000,
+                delay: 3000,
             },
             // 如果需要分页器
             pagination: {
@@ -119,8 +120,6 @@
             });
         });
     </script>
-
-
 </body>
 
 </html>
