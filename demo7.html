@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
 
@@ -16,15 +16,11 @@
         list-style: none;
     }
 
-
-
-
-
     .nav-menu {
-        margin-top: .208333rem;
-        margin-left: .416667rem;
-        height: 2.677083rem;
-        width: 1.640625rem;
+        margin-top: 0.2rem;
+        margin-left: 0.4rem;
+        height: 2.6rem;
+        width: 1.6rem;
         /* border: 1px red solid; */
     }
 
@@ -32,11 +28,11 @@
         color: #000000;
         text-decoration: none;
         display: block;
-        line-height: .3725rem;
-        font-size: .1875rem;
+        line-height: 0.3rem;
+        font-size: 0.1rem;
+        z-index: 0;
+        position: relative;
     }
-
-
 
     .btn {
         background: none;
@@ -61,7 +57,7 @@
         width: 100%;
         height: 100%;
         background: rgb(255, 227, 58);
-        z-index: -1;
+        z-index: 10;
         transition: transform 0.5s;
         transform-origin: 0 0;
         transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -74,12 +70,17 @@
     .btn1:hover::before {
         transform: scaleX(1);
     }
+
+    aside {
+        width: 500px;
+        height: 300px;
+        background: #eeeeee;
+    }
 </style>
 
 <body>
-    <aside class="">
+    <aside>
         <!-- <div class="menu iconfont icon-menu3"></div> 菜单栏-->
-        <img class="logo" src="./img/logo.png" alt="" />
         <div class="nav">
             <ul class="nav-menu">
                 <li><a class="btn btn1" href="#">NEWS</a></li>
@@ -88,9 +89,8 @@
                 <li><a class="btn btn1" href="#">MEMBERS INFO</a></li>
                 <li><a class="btn btn1" href="#">DISCOGRAPHY</a></li>
                 <li><a class="btn btn1" href="#">WHAT'S GOOSE HOUSE</a></li>
+                <p class="btn btn1">WHAT'S GOOSE HOUSE</p>
             </ul>
-
-        </div>
         </div>
     </aside>
 </body>
