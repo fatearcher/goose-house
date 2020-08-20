@@ -209,7 +209,7 @@ aside {
 .slide img {
   height: 888px;
   width: 7.703125rem;
-
+  display: block;
 }
 
 .swiper-pagination-bullet {
