@@ -228,6 +228,48 @@ aside {
 
 .whatnews {
   width: 10rem;
-  height: 3.504167rem;
-  background: pink;
+  height: 4.463542rem;
+  /* background: pink; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  background: rgb(228, 186, 0);
+  width: 4.880208rem;
+  height: 3.489583rem;
+  margin-top: .436667rem;
+  position: relative;
+}
+
+.right {
+  background: #eeeeee;
+  width: 3.427083rem;
+  height: 1.572917rem;
+  margin-top: 1.859375rem;
+}
+
+.title {
+  font-size: .3125rem;
+  text-decoration: underline;
+  position: absolute;
+  top: -.230417rem;
+  left: .619792rem;
+}
+
+.title-small {
+  color: #ffffff;
+  font-size: .25rem;
+  display: block;
+  position: absolute;
+  top: .494792rem;
+  left: 2.552083rem;
+}
+
+/* section three*/
+
+.discography {
+  background: cadetblue;
+  width: 10rem;
+  height: 4.463542rem;
 }

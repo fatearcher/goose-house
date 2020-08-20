@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <title>Document</title>
 </head>
-
+<script src="./js/index.js"></script>
 <style>
     * {
         margin: 0;
@@ -16,18 +17,99 @@
         list-style: none;
     }
 
-    .sss {
-        border: 1px red solid;
-        font-size: 0;
+    header {
+        width: 10rem;
+        background: pink;
+        height: 5vh;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .sss img {
-        display: block;
+    .notification {
+        padding: 0.078125rem 0 0 0.380208rem;
+        border: 1px red solid;
+    }
+
+    .notification a {
+        color: #000000;
+        text-decoration: underline;
+        font-size: 0.083333rem;
+    }
+
+
+    .sublnk {
+        border: 1px red solid;
+        width: 3rem;
+        margin-right: 50px;
+        line-height: 5vh;
+    }
+
+    .sns ul {
+        width: 1.015625rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sns {
+        /* background: #000;
+        border: 1px red solid;
+        width: .104167rem;
+        height: .104167rem; */
+        background: white;
+    }
+
+    .one {
+        display: flex;
+    }
+
+    aside {
+        width: 2.3rem;
+        background: aquamarine;
+        height: 95vh;
+        /* border: 1px red solid; */
+    }
+
+    .AAA {
+        width: 7.7rem;
+        background: wheat;
+        height: 95vh;
+        /* border: 1px red solid; */
+    }
+
+    .two {
+        background: darkolivegreen;
+        height: 50vh;
     }
 </style>
 
 <body>
-    <div class="sss"><img src="./img/1.jpg" alt=""></div>
+    <header>
+        <div class="notification">
+            <a href="#">メディアへの出演、取材等のお問い合せはこちらへ</a>
+        </div>
+        <div class="sublnk">
+            <div class="sns">
+                <ul>
+                    <li>asdasd</li>
+                    <li>asdasdasd</li>
+                    <li>asdasd</li>
+                    <li>asdsada</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="one">
+            <aside></aside>
+            <div class="AAA"></div>
+        </section>
+
+        <section class="two">
+
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 
 </html>
