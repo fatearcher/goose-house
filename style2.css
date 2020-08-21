@@ -16,20 +16,17 @@
 }
 
 @import url(//db.onlinewebfonts.com/c/3bfb3f90c3c5aa503027bec4f0e1afa6?family=BLT);
+
 @font-face {
   font-family: "BLT";
   src: url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.eot");
-  src: url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.svg#BLT")
-      format("svg");
+  src: url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/3bfb3f90c3c5aa503027bec4f0e1afa6.svg#BLT") format("svg");
 }
+
 /* header */
 
 header {
@@ -41,14 +38,14 @@ header {
 }
 
 .notification {
-  padding: 0.078125rem 0 0 0.380208rem;
+  padding: 0.078125rem 0 .026042rem 0.380208rem;
 }
 
 .notification a {
   color: #000000;
   text-decoration: underline;
+  text-align: center;
   font-size: 0.083333rem;
-  display: block;
 }
 
 .sublnk {
@@ -234,9 +231,7 @@ aside {
   background: #ffffff;
 }
 
-.swiper-container-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 0.104167rem;
 }
 
@@ -351,7 +346,7 @@ aside {
   font-family: BLT;
   position: absolute;
   top: 3.144792rem;
-  left: 2.942708rem;
+  left: 3.635417rem;
   white-space: nowrap;
 }
 
@@ -375,9 +370,9 @@ aside {
 
 .swiper-container02 {
   width: 100%;
-  height: 3.526042rem;
+  height: 3.026042rem;
   position: absolute;
-  top: .520833rem;
+  top: .820833rem;
 }
 
 .swiper-slide02 img {
@@ -408,18 +403,19 @@ aside {
 
 /* footer*/
 
-footer{
+footer {
   width: 10rem;
   height: 0.255208rem;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
+
 /* footer end*/
 
-footer span{
+footer span {
   font-size: .074167rem;
-  margin-top: .104167rem;
+  margin-top: .094167rem;
   margin-left: .052083rem;
   font-weight: bolder;
-} 
+}
