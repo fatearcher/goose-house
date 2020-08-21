@@ -6,9 +6,11 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <title>Document</title>
-    <link rel="stylesheet" href="./js/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./mini.css" media="screen and (max-width: 640px)" />
     <link rel="stylesheet" href="./style2.css" media="screen and (min-width: 641px)" />
+    <link href="//db.onlinewebfonts.com/c/3bfb3f90c3c5aa503027bec4f0e1afa6?family=BLT" rel="stylesheet"
+        type="text/css" />
 </head>
 
 <script src="./js/index.js"></script>
@@ -37,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/Goosehousejp-213238282024922/">
+                        <a href="https://www.instagram.com/goosehousejp/">
                             <img src="./img/instagram.png" alt="" />
                         </a>
                     </li>
@@ -65,7 +67,7 @@
                         <a class="a-color a-color1" href="#">WHAT'S GOOSE HOUSE</a>
                     </li>
                 </ul>
-                <div class="search-box flex j-s a-c">
+                <div class="search-box">
                     <input class="search-txt" type="text" placeholder="" />
                     <img src="./img/loupe.png" />
                 </div>
@@ -83,50 +85,98 @@
                         <img src="./img/3.jpg" alt="" />
                     </div>
                 </div>
-                <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var mySwiper = new Swiper(".swiper-container", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+            $(".menu,.menu1").click(function () {
+                $("aside").css({
+                    transform: `translateX(0px)`,
+                });
+                $(".shadow").show();
+            });
+        </script>
+
         <section class="two">
             <div class="whatnews">
                 <div class="left">
                     <span class="title">WHAT'S NEWS</span>
-                    <span class="title-small">MAY.8 2020</span>
+
+                    <span class="title-small01">MAY.8 2020</span>
+
+                    <span class="txt01">齊藤ジョニー弾き語りライブ 『VISITOR ビジター ~season 1~』</span>
+
+                    <span class="title-small02">MAY.8 2020</span>
+
+                    <span class="txt02">Goose house Live Tour 2018 Flight ツアーグッズ公開！</span>
+
+                    <span class="title-small03">MAY.8 2020</span>
+
+                    <span class="txt03">Unit Live #47 : Kei Shuhei K Sayaka</span>
+
+                    <span class="title-small04">MAY.8 2020</span>
+
+                    <span class="txt04">マナミ　ニューイヤー・ライブ 『ストロークタイム #4』</span>
                 </div>
                 <div class="right"></div>
             </div>
         </section>
+
         <section class="three">
-            <div class="discography"></div>
+            <div class="discography">
+                <span class="title02">DISCOGRAPHY</span>
+                <div class="swiper-container swiper-container02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide02">
+                            <img src="./img/phrase09a.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide02">
+                            <img src="./img/phrase14a.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide02">
+                            <img src="./img/phrase16.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide02">
+                            <img src="./img/phrase08a.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide02">
+                            <img src="./img/phrase09b.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div>
+                </div> -->
+                </div>
         </section>
     </main>
-
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/swiper/js/swiper.min.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
     <script>
-        var mySwiper = new Swiper(".swiper-container", {
-            loop: true, // 循环模式选项
+        var swiper02 = new Swiper('.swiper-container02', {
+            loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 2000,
             },
-            // 如果需要分页器
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
-
-        $(".menu,.menu1").click(function () {
-            $("aside").css({
-                transform: `translateX(0px)`,
-            });
-            $(".shadow").show();
-        });
-
-        $(".shadow").click(function () {
-            $(".shadow").hide();
-            $("aside").css({
-                transform: `translateX(-500px)`,
-            });
+            slidesPerView: 3,
+            spaceBetween: 70,
+            // pagination: {
+            //     el: '.swiper-pagination',
+            //     clickable: true,
+            // },
         });
     </script>
 </body>
