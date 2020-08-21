@@ -176,6 +176,7 @@ aside {
   display: block;
   line-height: 0.3725rem;
   font-size: 0.1875rem;
+  font-weight: bold;
 }
 
 .search-box {
@@ -359,7 +360,7 @@ aside {
 .discography {
   background: #eeeeee;
   width: 10rem;
-  height: 4.463542rem;
+  height: 4.625rem;
   position: relative;
 }
 
@@ -374,9 +375,9 @@ aside {
 
 .swiper-container02 {
   width: 100%;
-  height: 2.604167rem;
+  height: 3.526042rem;
   position: absolute;
-  top: 25%;
+  top: .520833rem;
 }
 
 .swiper-slide02 img {
@@ -388,7 +389,6 @@ aside {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,3 +403,23 @@ aside {
   -webkit-align-items: center;
   align-items: center;
 }
+
+/* section three end*/
+
+/* footer*/
+
+footer{
+  width: 10rem;
+  height: 0.255208rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+/* footer end*/
+
+footer span{
+  font-size: .074167rem;
+  margin-top: .104167rem;
+  margin-left: .052083rem;
+  font-weight: bolder;
+} 
