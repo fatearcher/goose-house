@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Avenir LT Pro 65 Medium";
+            list-style: none;
+        }
+
+        ul {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+
+        .content>div.img_container {
+            position: relative;
+            padding: 0;
+            width: 50.333333rem;
+            height: 30.333333rem;
+        }
+
+        .img_container img {
+            width: 50.333333rem;
+            height: 30.333333rem;
+            border-radius: .053333rem;
+        }
+
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50.333333rem;
+            height: 30.333333rem;
+            background: rgba(0, 0, 0, 0.4);
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            line-height: 30.333333rem;
+
+        }
+    </style>
+
+    <body>
+        <ul class="content">
+            <li class="img_container">
+                <img src="./img/kudo.jpg" alt="">
+                <div class="mask">adasddasd</div>
+            </li>
+        </ul>
+
+        <script>
+            $(document).ready(function () {
+                $(".img_container").mousemove(function () {
+                    $(".img_container .mask").hide();
+                });
+
+                $(".img_container").mouseout(function () {
+                    $(".img_container .mask").show();
+                });
+            });
+        </script>
+    </body>
+
+    </html>

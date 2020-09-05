@@ -52,6 +52,27 @@
     </header>
 
     <main>
+        <div class="scrolltop" onclick="scrollToTop();"></div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function () {
+                var scroll = document.querySelector('.scrolltop');
+                scroll.classList.toggle("active", window.scrollY > 500)
+            })
+
+            // function scrollToTop() {
+            //     window.scrollTo({
+            //         top: 0,
+            //         behavior: 'smooth'
+            //     })
+            // }
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
+            }
+        </script>
         <section class="one">
             <aside>
                 <!-- <div class="menu iconfont icon-menu3"></div> 菜单栏-->
@@ -59,11 +80,12 @@
                 <div class="nav"></div>
                 <ul class="nav-menu">
                     <li><a class="a-color a-color1" href="#">NEWS</a></li>
-                    <li><a class="a-color a-color1" href="#">STREAMING LIVE</a></li>
-                    <li><a class="a-color a-color1" href="#">LIVE SCHEDULE</a></li>
-                    <li><a class="a-color a-color1" href="#">MEMBERS INFO</a></li>
-                    <li><a class="a-color a-color1" href="#">DISCOGRAPHY</a></li>
-                    <li><a style="line-height:110%;margin-top: .104167rem;" class="a-color a-color1" href="#">WHAT'S
+                    <li><a class="a-color a-color1" href="#schedule">STREAMING LIVE</a></li>
+                    <li><a class="a-color a-color1" href="#schedule">LIVE SCHEDULE</a></li>
+                    <li><a class="a-color a-color1" href="#members">MEMBERS INFO</a></li>
+                    <li><a class="a-color a-color1" href="#discography">DISCOGRAPHY</a></li>
+                    <li><a style="line-height:110%;margin-top: .104167rem;" class="a-color a-color1"
+                            href="#whatnews">WHAT'S
                             GOOSE HOUSE</a>
                     </li>
                 </ul>
@@ -88,8 +110,6 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-
         <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./js/swiper/swiper-bundle.min.js"></script>
         <script>
@@ -111,7 +131,7 @@
             });
         </script>
 
-        <section class="two">
+        <section id="schedule" class="two">
             <div class="whatnews">
                 <div class="left">
                     <span class="title">WHAT'S NEWS</span>
@@ -135,8 +155,7 @@
                 <div class="right"></div>
             </div>
         </section>
-
-        <section class="three">
+        <section id="discography" class="three">
             <div class="discography">
                 <span class="title02">DISCOGRAPHY</span>
                 <div class="swiper-container swiper-container02">
@@ -178,6 +197,108 @@
                 // },
             });
         </script>
+
+        <section id="members" class="four">
+            <div class="profile">
+                <span class="profile_title">MEMBERS INFO</span>
+                <ul>
+                    <li class="sample1">
+                        <img src="./img/takebuchi.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">Kei Takebuchi
+                                </br>
+                                竹 渕 慶
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="sample1">
+                        <img src="./img/watanabe.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">
+                                Shuhei Watanabe
+                                </br>
+                                ワタナベシュウヘイ
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="sample1">
+                        <img src="./img/manami.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">Manami
+                                </br>
+                                マ ナ ミ
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sample1">
+                        <img src="./img/kudo.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">Shuhei Kudo
+                                </br>
+                                工藤秀平
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sample1">
+                        <img src="./img/sayaka.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">Sayaka
+                                </br>
+                                沙 夜 香
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sample1">
+                        <img src="./img/johnny.jpg" alt="">
+                        <div class="mask">
+                            <div class="caption">Johnny Saito
+                                </br>
+                                齊藤ジョニー
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="whatnews" class="five">
+            <span class="about_title">WHAT'S GOOSE HOUSE</span>
+            <div class="about_left">
+                <div class="about">
+                    シンガーソングライターが
+                    集いオンガクを奏でる家、Goose house。
+                    <br>
+                    ひとつひとつは、まだちっぽけな音だけれど、
+                    <br>
+                    重なり合い、紡ぎ合い、やがてひとつの暖かい音になり、
+                    <br>
+                    この都会の片隅の小さな部屋から、世界中の街へ拡がりつつある。
+                    <br>
+                    <br>
+                    <br>
+                    10年前には考えられなかった。それが「今」という時代。
+                    <br>
+                    オンガクを取り巻く環境は、明るい話ばかりじゃないけど、
+                    <br>
+                    オンガクの力は、変わらなくヒトを包んでくれる。
+                    <br>
+                    <br>
+                    <br>
+                    オンガクの「今」を、全身で楽しみたい。
+                    <br>
+                    オンガクの「これから」を、この目で確かめたい。
+                    <br>
+                    Gooseたちはそれぞれの小さな翼を広げ、
+                    <br>
+                    小さな翼ひとつではたどり着けない、新しい時代を見ようとしている。
+                </div>
+            </div>
+            <div class="about_right">
+                <img src="./img/photo_sp.jpg" alt="">
+            </div>
+        </section>
     </main>
 
     <footer>
