@@ -458,10 +458,10 @@ aside {
 }
 
 .sample1 .caption {
-  font-size: 30px;
+  font-size: .15625rem;
   text-align: center;
   /* padding-top: 140px; */
-  padding-top: 130px;
+  padding-top: .677083rem;
   color: #fff;
   /* display: none; */
 }
@@ -525,19 +525,23 @@ div img:hover{
   left: 0.619792rem;
 }
 
-.about {
-  font-size: .0930208rem;
-  margin: .260417rem auto;
-  width: 4.166667rem;
-  padding-top: .520833rem;
+.about_left{
+  padding-top: .720833rem;
   padding-left: 1.041667rem;
+}
+
+.about_left .about{
+  font-size: .104167rem;
   font-weight: bold;
 }
 
 .about_right {
   padding-top: .500833rem;
   margin: .260417rem auto;
+}
 
+.about_right img{
+  width: 3.333333rem;
 }
 
 /* section five end*/
