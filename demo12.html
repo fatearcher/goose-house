@@ -5,6 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 200) {
+                        $(this).css('opacity', '1');
+                        $(this).css('transform', 'translateY(0)');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <style>
@@ -49,22 +65,28 @@
         transform: scale(1.2);
         transition: all 0.6s;
     }
+
+    .fadein {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s;
+    }
 </style>
 
 <body>
-    <div class="sample1">
+    <div class="sample1 fadein">
         <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
-        <div class="mask">
+        <div class="mask ">
             <div class="caption">It's fresh !</div>
         </div>
     </div>
-    <div class="sample1">
+    <div class="sample1 fadein">
         <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
-        <div class="mask">
+        <div class="mask ">
             <div class="caption">It's fresh !</div>
         </div>
     </div>
-    <div class="sample1">
+    <div class="sample1 fadein">
         <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
         <div class="mask">
             <div class="caption">It's fresh !</div>

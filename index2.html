@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="./style2.css" media="screen and (min-width: 641px)" />
     <link href="//db.onlinewebfonts.com/c/3bfb3f90c3c5aa503027bec4f0e1afa6?family=BLT" rel="stylesheet"
         type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.fadein').each(function () {
+                    var targetElement = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    if (scroll > targetElement - windowHeight + 200) {
+                        $(this).css('opacity', '1');
+                        $(this).css('transform', 'translateY(0)');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <script src="./js/index.js"></script>
@@ -58,13 +74,6 @@
                 var scroll = document.querySelector('.scrolltop');
                 scroll.classList.toggle("active", window.scrollY > 500)
             })
-
-            // function scrollToTop() {
-            //     window.scrollTo({
-            //         top: 0,
-            //         behavior: 'smooth'
-            //     })
-            // }
 
             function scrollToTop() {
                 window.scrollTo({
@@ -136,21 +145,21 @@
                 <div class="left">
                     <span class="title">WHAT'S NEWS</span>
 
-                    <span class="title-small01">MAY.8 2020</span>
+                    <span class="title-small01 fadein">MAY.8 2020</span>
 
-                    <span class="txt01">齊藤ジョニー弾き語りライブ 『VISITOR ビジター ~season 1~』</span>
+                    <span class="txt01 fadein">齊藤ジョニー弾き語りライブ 『VISITOR ビジター ~season 1~』</span>
 
-                    <span class="title-small02">APR.16 2018</span>
+                    <span class="title-small02 fadein">APR.16 2018</span>
 
-                    <span class="txt02">Goose house Live Tour 2018 Flight ツアーグッズ公開！</span>
+                    <span class="txt02 fadein">Goose house Live Tour 2018 Flight ツアーグッズ公開！</span>
 
-                    <span class="title-small03">FEB.3 2018</span>
+                    <span class="title-small03 fadein">FEB.3 2018</span>
 
-                    <span class="txt03">Unit Live #47 : Kei Shuhei K Sayaka</span>
+                    <span class="txt03 fadein">Unit Live #47 : Kei Shuhei K Sayaka</span>
 
-                    <span class="title-small04">SEP.22 2017</span>
+                    <span class="title-small04 fadein">SEP.22 2017</span>
 
-                    <span class="txt04">マナミ　ニューイヤー・ライブ 『ストロークタイム #4』</span>
+                    <span class="txt04 fadein">マナミ　ニューイヤー・ライブ 『ストロークタイム #4』</span>
                 </div>
                 <div class="right"></div>
             </div>
@@ -158,7 +167,7 @@
         <section id="discography" class="three">
             <div class="discography">
                 <span class="title02">DISCOGRAPHY</span>
-                <div class="swiper-container swiper-container02">
+                <div class="swiper-container swiper-container02 fadein">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide02">
                             <img src="./img/phrase09a.jpg" alt="">
@@ -202,7 +211,7 @@
             <div class="profile">
                 <span class="profile_title">MEMBERS INFO</span>
                 <ul>
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/takebuchi.jpg" alt="">
                         <div class="mask">
                             <div class="caption">Kei Takebuchi
@@ -212,7 +221,7 @@
                         </div>
                     </li>
 
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/watanabe.jpg" alt="">
                         <div class="mask">
                             <div class="caption">
@@ -224,7 +233,7 @@
                     </li>
 
 
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/manami.jpg" alt="">
                         <div class="mask">
                             <div class="caption">Manami
@@ -233,7 +242,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/kudo.jpg" alt="">
                         <div class="mask">
                             <div class="caption">Shuhei Kudo
@@ -242,7 +251,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/sayaka.jpg" alt="">
                         <div class="mask">
                             <div class="caption">Sayaka
@@ -251,7 +260,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="sample1">
+                    <li class="sample1 fadein">
                         <img src="./img/johnny.jpg" alt="">
                         <div class="mask">
                             <div class="caption">Johnny Saito
@@ -266,7 +275,7 @@
         <section id="whatnews" class="five">
             <span class="about_title">WHAT'S GOOSE HOUSE</span>
             <div class="about_left">
-                <div class="about">
+                <div class="about fadein">
                     シンガーソングライターが
                     集いオンガクを奏でる家、Goose house。
                     <br>
@@ -295,7 +304,7 @@
                     小さな翼ひとつではたどり着けない、新しい時代を見ようとしている。
                 </div>
             </div>
-            <div class="about_right">
+            <div class="about_right fadein">
                 <img src="./img/photo_sp.jpg" alt="">
             </div>
         </section>
