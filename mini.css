@@ -36,9 +36,8 @@
   }
 
   header img {
-    margin-left: 20px;
-    width: 25px;
-
+    margin-left: .266667rem;
+    width: .333333rem;
   }
 
   aside {
@@ -47,18 +46,18 @@
 
   .slide,
   .slide img {
-    padding: 5px;
+    padding: 0 .04rem 0 .04rem;
     width: 100%;
     height: 5.593333rem;
   }
 
   .whatnews {
-    width: 9.6rem;
+    width: 9.83rem;
     height: 10rem;
     /* background: pink; */
     justify-content: space-between;
-    margin-left: 0.20rem;
-    margin-top: 0.20rem;
+    margin: 0 auto;
+    margin-top: 0.15rem;
     margin-bottom: 0.5rem;
     background: rgb(228, 186, 0);
     display: flex;
@@ -136,6 +135,7 @@
   .txt01 {
     font-size: 0.25rem;
     font-family: BLT;
+    font-weight: bold;
     position: absolute;
     top: 2.3rem;
     left: 1.942708rem;
@@ -145,6 +145,7 @@
   .txt02 {
     font-size: 0.25rem;
     font-family: BLT;
+    font-weight: bold;
     position: absolute;
     top: 4.3rem;
     left: 1.942708rem;
@@ -154,6 +155,7 @@
   .txt03 {
     font-size: 0.25rem;
     font-family: BLT;
+    font-weight: bold;
     position: absolute;
     top: 6.3rem;
     left: 1.942708rem;
@@ -163,6 +165,7 @@
   .txt04 {
     font-size: 0.25rem;
     font-family: BLT;
+    font-weight: bold;
     position: absolute;
     top: 8.3rem;
     left: 1.942708rem;
@@ -192,7 +195,7 @@
     font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
-    top: -0.230417rem;
+    top: -0.380417rem;
     left: 0.619792rem;
   }
 
@@ -247,7 +250,7 @@
     font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
-    top: -0.230417rem;
+    top: -0.380417rem;
     left: 0.619792rem;
   }
 
@@ -271,10 +274,10 @@
   }
 
   .sample1 .caption {
-    font-size: .15625rem;
+    font-size: .45625rem;
     text-align: center;
     /* padding-top: 140px; */
-    padding-top: .677083rem;
+    padding-top: 2.677083rem;
     color: #fff;
     /* display: none; */
   }
@@ -317,7 +320,7 @@
   .five {
     background: #eeeeee;
     width: 10rem;
-    height: 10rem;
+    height: 13.5rem;
     position: relative;
   }
 
@@ -325,7 +328,7 @@
     font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
-    top: -0.230417rem;
+    top: -0.380417rem;
     left: 0.619792rem;
   }
 
@@ -346,7 +349,9 @@
   }
 
   .about_right img {
-    width: 10rem;
+    width: 9.6rem;
+    margin: 0 auto;
+    display: block;
   }
 
   /* section five end*/
@@ -356,10 +361,15 @@
 
   footer {
     width: 10rem;
-    height: 0.255208rem;
+    height: 0.455208rem;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
+
+  }
+
+  footer .sns {
+    padding-top: 0.1rem;
   }
 
   /* footer end*/
@@ -369,6 +379,11 @@
     margin-top: .094167rem;
     margin-left: .052083rem;
     font-weight: bolder;
+  }
+
+  footer .sns img {
+    margin-left: .266667rem;
+    width: .333333rem;
   }
 
   /* footer end*/
