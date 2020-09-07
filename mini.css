@@ -53,17 +53,21 @@
   }
 
   .whatnews {
-    width: 10rem;
-    height: 4.463542rem;
+    width: 9.6rem;
+    height: 10rem;
     /* background: pink; */
-    display: flex;
     justify-content: space-between;
+    margin-left: 0.20rem;
+    margin-top: 0.20rem;
+    margin-bottom: 0.5rem;
+    background: rgb(228, 186, 0);
+    display: flex;
   }
 
   .left {
-    background: rgb(228, 186, 0);
+
     width: 4.880208rem;
-    height: 3.489583rem;
+    height: 8.489583rem;
     margin-top: 0.436667rem;
     position: relative;
     white-space：nowrap;
@@ -72,12 +76,12 @@
   .right {
     background: #eeeeee;
     width: 3.427083rem;
-    height: 1.572917rem;
-    margin-top: 1.859375rem;
+    height: 5.572917rem;
+    margin-top: 2.359375rem;
   }
 
   .title {
-    font-size: 0.3125rem;
+    font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
     top: -0.230417rem;
@@ -86,82 +90,82 @@
 
   .title-small01 {
     color: #ffffff;
-    font-size: 0.25rem;
+    font-size: 0.35rem;
     display: block;
     position: absolute;
-    top: 0.494792rem;
-    left: 2.552083rem;
+    top: 1.2rem;
+    left: 1.552083rem;
     font-family: BLT;
     text-decoration: underline;
   }
 
   .title-small02 {
     color: #ffffff;
-    font-size: 0.25rem;
+    font-size: 0.35rem;
     display: block;
     position: absolute;
-    top: 1.270833rem;
-    left: 3.098958rem;
+    top: 3.2rem;
+    left: 1.552083rem;
     font-family: BLT;
     text-decoration: underline;
   }
 
   .title-small03 {
     color: #ffffff;
-    font-size: 0.25rem;
+    font-size: 0.35rem;
     display: block;
     position: absolute;
-    top: 2.010417rem;
-    left: 2.552083rem;
+    top: 5.2rem;
+    left: 1.552083rem;
     font-family: BLT;
     text-decoration: underline;
   }
 
   .title-small04 {
     color: #ffffff;
-    font-size: 0.25rem;
+    font-size: 0.35rem;
     display: block;
     position: absolute;
-    top: 2.7833333rem;
-    left: 3.098958rem;
+    top: 7.2rem;
+    left: 1.552083rem;
     font-family: BLT;
     text-decoration: underline;
   }
 
 
   .txt01 {
-    font-size: 0.17rem;
+    font-size: 0.25rem;
     font-family: BLT;
     position: absolute;
-    top: 0.895833rem;
-    left: 2.942708rem;
+    top: 2.3rem;
+    left: 1.942708rem;
     white-space: nowrap;
   }
 
   .txt02 {
-    font-size: 0.17rem;
+    font-size: 0.25rem;
     font-family: BLT;
     position: absolute;
-    top: 1.729167rem;
-    left: 3.635417rem;
+    top: 4.3rem;
+    left: 1.942708rem;
     white-space: nowrap;
   }
 
   .txt03 {
-    font-size: 0.17rem;
+    font-size: 0.25rem;
     font-family: BLT;
     position: absolute;
-    top: 2.464583rem;
-    left: 2.942708rem;
+    top: 6.3rem;
+    left: 1.942708rem;
     white-space: nowrap;
   }
 
   .txt04 {
-    font-size: 0.17rem;
+    font-size: 0.25rem;
     font-family: BLT;
     position: absolute;
-    top: 3.144792rem;
-    left: 3.635417rem;
+    top: 8.3rem;
+    left: 1.942708rem;
     white-space: nowrap;
   }
 
@@ -185,7 +189,7 @@
   }
 
   .title02 {
-    font-size: 0.3125rem;
+    font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
     top: -0.230417rem;
@@ -235,12 +239,12 @@
   .profile {
     background: #fff;
     width: 10rem;
-    height: 4.463542rem;
+    height: 36.5rem;
     position: relative;
   }
 
   .profile_title {
-    font-size: 0.3125rem;
+    font-size: 0.5125rem;
     text-decoration: underline;
     position: absolute;
     top: -0.230417rem;
@@ -248,10 +252,8 @@
   }
 
   .profile ul {
-    display: flex;
-    flex-flow: wrap;
     justify-content: space-between;
-    padding: .572917rem .6025rem 0 .6025rem;
+    padding: .572917rem .2025rem 0 .2025rem;
 
   }
 
@@ -263,7 +265,7 @@
   }
 
   .profile img {
-    width: 2.9rem;
+    width: 10rem;
     display: block;
     transition: all 0.6s;
   }
@@ -303,7 +305,51 @@
 
   /* section four end*/
 
+  /* section five */
+  .five::before {
+    display: block;
+    height: 0.6rem;
+    margin-top: -0.6rem;
+    content: "";
+    visibility: hidden;
+  }
 
+  .five {
+    background: #eeeeee;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+  }
+
+  .about_title {
+    font-size: 0.5125rem;
+    text-decoration: underline;
+    position: absolute;
+    top: -0.230417rem;
+    left: 0.619792rem;
+  }
+
+  .about_left {
+    width: 10rem;
+    padding-top: .420833rem;
+    padding-left: 1.041667rem;
+  }
+
+  .about_left .about {
+    font-size: .104167rem;
+    font-weight: bold;
+  }
+
+  .about_right {
+    padding-top: .500833rem;
+    margin: .260417rem auto;
+  }
+
+  .about_right img {
+    width: 10rem;
+  }
+
+  /* section five end*/
 
 
   /* footer*/
