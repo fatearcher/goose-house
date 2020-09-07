@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.min.js"
+    ></script>
     <script>
-        $(function () {
-            $(window).scroll(function () {
-                $('.fadein').each(function () {
-                    var targetElement = $(this).offset().top;
-                    var scroll = $(window).scrollTop();
-                    var windowHeight = $(window).height();
-                    if (scroll > targetElement - windowHeight + 200) {
-                        $(this).css('opacity', '1');
-                        $(this).css('transform', 'translateY(0)');
-                    }
-                });
-            });
+      $(function () {
+        $(window).scroll(function () {
+          $(".fadein").each(function () {
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200) {
+              $(this).css("opacity", "1");
+              $(this).css("transform", "translateY(0)");
+            }
+          });
         });
+      });
     </script>
-</head>
+  </head>
 
-<style>
+  <style>
     .sample1 {
-        width: 800px;
+      width: 800px;
 
-        margin: 10px 8px 10px 16px;
-        position: relative;
-        /* 相対位置指定 */
-        border: 1px red solid;
-        overflow: hidden;
+      margin: 10px 8px 10px 16px;
+      position: relative;
+      /* 相対位置指定 */
+      border: 1px red solid;
+      overflow: hidden;
     }
 
     .sample1 .caption {
-        font-size: 50px;
-        text-align: center;
-        padding-top: 180px;
-        color: #fff;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 180px;
+      color: #fff;
     }
 
     .sample1 .mask {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        /* 絶対位置指定 */
-        top: 0;
-        left: 0;
-        opacity: 1;
-        /* マスクを表示しない */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* マスクは半透明 */
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      /* 絶対位置指定 */
+      top: 0;
+      left: 0;
+      opacity: 1;
+      /* マスクを表示しない */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* マスクは半透明 */
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
     }
 
     .mask:hover {
-        opacity: 0;
-        /* マスクを表示する */
+      opacity: 0;
+      /* マスクを表示する */
     }
 
     .sample1:hover img {
-        transform: scale(1.2);
-        transition: all 0.6s;
+      transform: scale(1.2);
+      transition: all 0.6s;
     }
 
     .fadein {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 1s;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div class="sample1 fadein">
-        <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
-        <div class="mask ">
-            <div class="caption">It's fresh !</div>
-        </div>
+      <img
+        style="display: block"
+        src="./img/johnny.jpg"
+        alt="フルーツ寄せ集め"
+      />
+      <div class="mask">
+        <div class="caption">It's fresh !</div>
+      </div>
     </div>
     <div class="sample1 fadein">
-        <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
-        <div class="mask ">
-            <div class="caption">It's fresh !</div>
-        </div>
+      <img
+        style="display: block"
+        src="./img/johnny.jpg"
+        alt="フルーツ寄せ集め"
+      />
+      <div class="mask">
+        <div class="caption">It's fresh !</div>
+      </div>
     </div>
     <div class="sample1 fadein">
-        <img style="display: block" src="./img/johnny.jpg" alt="フルーツ寄せ集め" />
-        <div class="mask">
-            <div class="caption">It's fresh !</div>
-        </div>
+      <img
+        style="display: block"
+        src="./img/johnny.jpg"
+        alt="フルーツ寄せ集め"
+      />
+      <div class="mask">
+        <div class="caption">It's fresh !</div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

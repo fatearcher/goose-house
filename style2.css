@@ -466,14 +466,6 @@ aside {
   /* display: none; */
 }
 
-/* div img{
-  cursor: pointer;
-  transition: all 0.6s;
-}
-div img:hover{
-  transform: scale(1.4);
- */
-
 .sample1 .mask {
   width: 100%;
   height: 100%;
@@ -525,12 +517,12 @@ div img:hover{
   left: 0.619792rem;
 }
 
-.about_left{
+.about_left {
   padding-top: .720833rem;
   padding-left: 1.041667rem;
 }
 
-.about_left .about{
+.about_left .about {
   font-size: .104167rem;
   font-weight: bold;
 }
@@ -540,7 +532,7 @@ div img:hover{
   margin: .260417rem auto;
 }
 
-.about_right img{
+.about_right img {
   width: 3.333333rem;
 }
 
