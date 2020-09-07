@@ -40,6 +40,24 @@
     width: .333333rem;
   }
 
+  .sns ul a:hover img {
+    animation: sns 0.4s ease-out;
+  }
+
+  @keyframes sns {
+    0% {
+      transform: rotate(0);
+    }
+
+    20% {
+      transform: rotate(20deg);
+    }
+
+    60% {
+      transform: rotate(-20deg);
+    }
+  }
+
   aside {
     display: none;
   }
