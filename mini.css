@@ -66,7 +66,7 @@
   .slide img {
     padding: 0 .04rem 0 .04rem;
     width: 100%;
-    height: 5.593333rem;
+    height: 6.593333rem;
   }
 
   .whatnews {
@@ -338,7 +338,7 @@
   .five {
     background: #eeeeee;
     width: 10rem;
-    height: 14.5rem;
+    height: 13.5rem;
     position: relative;
   }
 
@@ -382,6 +382,7 @@
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
+    border: 1px red solid;
 
   }
 
@@ -390,15 +391,19 @@
     margin-top: .094167rem;
     margin-left: .052083rem;
     font-weight: bolder;
+    border: 1px red solid;
   }
 
+  
   footer .sns img {
     margin-left: .266667rem;
     width: .333333rem;
   }
-  /* footer .sns {
+
+  footer .sns {
     padding-top: 0.1rem;
-  } */
+    border: 1px red solid;
+  }
 
   /* footer end*/
 
