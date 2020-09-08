@@ -205,7 +205,7 @@
   .discography {
     background: #eeeeee;
     width: 10rem;
-    height: 4.625rem;
+    height: 5.625rem;
     position: relative;
   }
 
@@ -226,8 +226,8 @@
 
   .swiper-slide02 img {
     height: 100%;
-    width: 100%;
   }
+
 
   .swiper-slide02 {
     text-align: center;
