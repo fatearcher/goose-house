@@ -351,13 +351,12 @@
   }
 
   .about_left {
-    width: 10rem;
+    width: 100%;
     padding-top: .420833rem;
     padding-left: 1.041667rem;
   }
 
   .about_left .about {
-    font-size: .266667rem;
     font-weight: bold;
   }
 
