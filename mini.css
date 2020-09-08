@@ -338,7 +338,7 @@
   .five {
     background: #eeeeee;
     width: 10rem;
-    height: 13.5rem;
+    height: 12.5rem;
     position: relative;
   }
 
@@ -357,7 +357,7 @@
   }
 
   .about_left .about {
-    font-size: .133333rem;
+    font-size: .333333rem;
     font-weight: bold;
   }
 
@@ -396,12 +396,10 @@
 
   
   footer .sns img {
-    margin-left: .266667rem;
     width: .333333rem;
   }
 
   footer .sns {
-    padding-top: 0.1rem;
     border: 1px red solid;
   }
 
