@@ -357,6 +357,7 @@
   }
 
   .about_left .about {
+    font-size: .133333rem;
     font-weight: bold;
   }
 
@@ -384,12 +385,6 @@
 
   }
 
-  footer .sns {
-    padding-top: 0.1rem;
-  }
-
-  /* footer end*/
-
   footer span {
     font-size: .213333rem;
     margin-top: .094167rem;
@@ -401,6 +396,13 @@
     margin-left: .266667rem;
     width: .333333rem;
   }
+  /* footer .sns {
+    padding-top: 0.1rem;
+  } */
+
+  /* footer end*/
+
+
 
   /* footer end*/
   /* 
